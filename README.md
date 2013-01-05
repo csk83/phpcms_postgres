@@ -13,9 +13,12 @@ phpcms的postgresql数据库支持功能。
     - mysql中limit的写法以及 postgresql中limit offset写法不同的问题
     - mysql自增序列获取与postgresql中自增序列获取的问题处理
 
-使用方法
+安装方法
 -------
 
+
+使用例子
+-------
 
 
 

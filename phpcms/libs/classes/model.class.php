@@ -6,7 +6,7 @@
  * @license				http://www.phpcms.cn/license/
  * @lastmodify			2010-6-7
  */
-
+defined('IN_PHPCMS') or exit('Access Denied');
 pc_base::load_sys_class('db_factory', '', 0);
 class model {
 	
@@ -50,19 +50,19 @@ class model {
 		}
 		return $this->db->select(trim($data), $this->table_name, $where, trim($limit), trim($order), trim($group), trim($key));
 	}
-	
-		
+
+
 	/**
 	 * 执行sql查询
 	 */
 	final public function get_all($sql){
 		return $this->db->get_all($sql);
 	}
-	
+
 	final public function new_id(){
 		return $this->db->new_id($this->table_autoid);
 	}
-	
+
 	/**
 	 * 查询多条数据并分页
 	 * @param $where
@@ -101,7 +101,7 @@ class model {
 		}
 		return $this->db->get_one(trim($data), $this->table_name, $where, trim($order), trim($group));
 	}
-	
+
 	/**
 	 * 直接执行sql查询
 	 * @param $sql							查询sql语句
