@@ -214,7 +214,7 @@ final class mysql {
 	public function new_id($autoid){
 		return false;
 	}
-	
+
 	/**
 	 * 获取最后一次添加记录的主键号
 	 * @return int 
